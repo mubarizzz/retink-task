@@ -1,0 +1,25 @@
+:root {
+    --primary: #f44c4e;
+}
+
+.button__btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4d3154;
+    cursor: pointer;
+    background-color: var(--primary);
+    width: 10rem;
+    height: 80px;
+}
+
+.button__btn:hover {
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+    background-color: #fa0408bb;
+    color: white;
+    border-radius: 4px;
+}

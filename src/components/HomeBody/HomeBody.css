@@ -1,0 +1,139 @@
+.div__homebody{
+    height: 100vh;
+    background-color: #f8f8fa;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.div__homebody__left{
+    width: 50vw;
+    height: 100vh;
+    padding-left: 3rem;
+    height:30%;
+    color: #4d3154;
+    padding-right: 5rem;
+}
+
+.div__homebody__left img {
+    margin-bottom: 1.5rem;
+    width: 15rem;
+}
+
+.div__homebody__left h1 {
+    margin-left: 0.8rem;
+}
+
+.div__homebody__right{
+    width: 50vw;
+    height: 100vh;
+}
+
+.div__homebody__right img {
+    max-width: 50%;
+    max-width: auto;
+    top: 20vh;
+    /* bottom: 0px; */
+    right: 0px;
+    position: absolute;
+    z-index: 900;
+}
+
+.m {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+    .div__homebody{
+        flex-direction: column;
+        height: 110vh;
+        justify-content: flex-end;
+    }
+    .div__homebody__left{
+        height: 30rem;
+        margin-top: 10rem;
+        padding: 0;
+        justify-items: center;
+        width: 100%;
+    }
+    .div__homebody__left h1 {
+        margin: 0 2rem;
+    }
+    .div__homebody__left img {
+        margin: 0 2rem;
+        width: 13rem;
+    }
+    .div__homebody__right {
+        transition: all 0.3s ease-out;
+    }
+    .div__homebody__right img {
+        display: block;
+        top: unset;
+        right: unset;
+        width: 625px;
+        max-width: none;
+        margin: 0 auto;
+    }
+}
+
+.MuiButton-root{
+    margin-top: 3rem !important;
+    margin-left: 4rem !important;
+}
+
+@media screen and (max-width: 768px) {
+    .div__homebody {
+        height: 140vh;
+    }
+    .div__homebody__right img {
+        width: 500px;
+        max-width: none;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .div__homebody {
+        height: 90vh;
+    }
+    .div__homebody__left {
+        height: 30vh;
+        margin-bottom: 2rem;
+        width: 100vw;
+        padding: 1rem;
+        margin-top: 6rem;
+    }
+    .div__homebody__left h1 {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+    .div__homebody__left img {
+        width: 8rem;
+        margin: 0 auto;
+    }
+
+    .div__homebody__right {
+        padding-right: 5rem;
+    }
+
+    .div__homebody__right img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .div__homebody {
+        height: 80vh;
+    }
+    .div__homebody__right img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .div__homebody__right img {
+        width: 200px;
+    }
+}
